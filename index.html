@@ -3,51 +3,260 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catálogo de filmes nacionais e internacionais organizados por gênero e categoria.">
-    <title>Anita Alves da Nóbrega Donato</title>
+    <meta name="description" content="Cine Clube - catálogo de filmes nacionais e internacionais com trailers e novidades.">
+    <title>Cine Clube</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f9fafb;
+            color: #1f2937;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        article {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+        }
+
+        fieldset {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        input:focus {
+            outline: 2px solid #2563eb;
+        }
+
+        input:invalid:not(:placeholder-shown) {
+            border-color: red;
+        }
+
+        input:valid:not(:placeholder-shown) {
+            border-color: green;
+        }
+
+        small {
+            color: #555;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background: #111;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        aside {
+            background: #e5e7eb;
+            padding: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #111;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Catálogo de filmes</h1>
-        <nav>
-            <ul>
-                <li><a href="#" style="display:inline-block;padding:12px 16px;">Romance</a></li>
-                <li><a href="#" style="display:inline-block;padding:12px 16px;">Ficção Científica</a></li>
-                <li><a href="#" style="display:inline-block;padding:12px 16px;">Ação</a></li>
-                <li><a href="#" style="display:inline-block;padding:12px 16px;">Comédia</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
+<header>
+    <h1>Cine Clube</h1>
+    <p>Descubra, explore e viva o cinema</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Romance</a></li>
+        <li><a href="#">Ficção Científica</a></li>
+        <li><a href="#">Ação</a></li>
+        <li><a href="#">Comédia</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Filmes recentemente adicionados</h2>
+
         <article>
-            <h2>Filmes recentemente adicionados</h2>
-            <p>Interstellar (2014)</p>
-            <p>Inception (2010)</p>
-            <p>Oppenheimer (2023)</p>
-            <p><a href="#" aria-label="Veja mais sobre filmes recentemente adicionados" style="display:inline-block;padding:12px 16px;">Veja mais</a></p>
+            <h3>Interstellar (2014)</h3>
+            <p><strong>Gênero:</strong> Ficção Científica</p>
+            <p><strong>Descrição:</strong> Astronautas viajam por um buraco de minhoca em busca de um novo lar para a humanidade.</p>
         </article>
 
         <article>
-            <h2>Filmes Nacionais</h2>
-            <p>Cidade de Deus (2002)</p>
-            <p>Tropa de Elite (2007)</p>
-            <p>O Auto da Compadecida (2000)</p>
-            <p><a href="#" aria-label="Veja mais filmes nacionais" style="display:inline-block;padding:12px 16px;">Veja mais</a></p>
+            <h3>Inception (2010)</h3>
+            <p><strong>Gênero:</strong> Ficção Científica / Ação</p>
+            <p><strong>Descrição:</strong> Um ladrão invade sonhos para implantar ideias na mente de outras pessoas.</p>
         </article>
-    </main>
 
-    <aside>
-        <h3>Categorias</h3>
-        <ul>
-            <li><a href="#" style="display:inline-block;padding:12px 16px;">Clássicos</a></li>
-            <li><a href="#" style="display:inline-block;padding:12px 16px;">Anos 2000</a></li>
-            <li><a href="#" style="display:inline-block;padding:12px 16px;">Lançamentos</a></li>
-        </ul>
-    </aside>
+        <article>
+            <h3>Oppenheimer (2023)</h3>
+            <p><strong>Gênero:</strong> Drama / Biografia</p>
+            <p><strong>Descrição:</strong> A história do físico responsável pela criação da bomba atômica.</p>
+        </article>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Filmes BR. Todos os direitos reservados.</p>
-    </footer>
+    <section>
+        <h2>Filmes Nacionais</h2>
+
+        <article>
+            <h3>Cidade de Deus (2002)</h3>
+            <p><strong>Gênero:</strong> Drama / Crime</p>
+            <p><strong>Descrição:</strong> O crescimento do crime em uma favela do Rio de Janeiro.</p>
+        </article>
+
+        <article>
+            <h3>Tropa de Elite (2007)</h3>
+            <p><strong>Gênero:</strong> Ação / Policial</p>
+            <p><strong>Descrição:</strong> A rotina do BOPE no combate ao tráfico.</p>
+        </article>
+
+        <article>
+            <h3>O Auto da Compadecida (2000)</h3>
+            <p><strong>Gênero:</strong> Comédia / Drama</p>
+            <p><strong>Descrição:</strong> Aventuras de João Grilo e Chicó no sertão nordestino.</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Faça parte do Cine Clube</h2>
+
+        <form>
+
+            <fieldset>
+                <legend>Dados do Usuário</legend>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required minlength="3" placeholder="Seu nome">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="email@exemplo.com">
+
+                <label for="cpf">CPF:</label>
+                <input type="text"
+                       id="cpf"
+                       name="cpf"
+                       required
+                       pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$"
+                       placeholder="000.000.000-00">
+                <small>Formato: 000.000.000-00</small>
+
+                <label for="mensagem">Preferências de filmes:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Ex: ação, romance..."></textarea>
+
+            </fieldset>
+
+            <button type="submit">Entrar no Clube</button>
+
+        </form>
+    </section>
+
+    <section>
+        <h2>Trailer em destaque</h2>
+
+        <video controls poster="https://via.placeholder.com/600x300" aria-label="Trailer de filme em destaque">
+            <source src="video.mp4" type="video/mp4">
+
+            <track src="legenda.vtt"
+                   kind="subtitles"
+                   srclang="pt"
+                   label="Português"
+                   default>
+
+            Seu navegador não suporta vídeo.
+        </video>
+
+    </section>
+
+</main>
+
+<aside>
+    <h3>Categorias</h3>
+    <ul>
+        <li><a href="#">Clássicos</a></li>
+        <li><a href="#">Anos 2000</a></li>
+        <li><a href="#">Lançamentos</a></li>
+    </ul>
+</aside>
+
+<footer>
+    <p>&copy; 2026 Cine Clube. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
